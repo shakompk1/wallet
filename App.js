@@ -13,17 +13,17 @@ export default function App() {
                 <Stack.Screen
                     name="Home"
                     component={HomeScreen}
-                    options={{ title: "Финансы" }}
+                    options={{ title: "Finance" }}
                 />
                 {/* <Stack.Screen
                     name="Add"
                     component={AddEntryScreen}
-                    options={{ title: "Новая операция" }}
+                    options={{ title: "New operation" }}
                 /> */}
                 <Stack.Screen
                     name="Stats"
                     component={StatsScreen}
-                    options={{ title: "Статистика" }}
+                    options={{ title: "Statistics" }}
                 />
             </Stack.Navigator>
         </NavigationContainer>

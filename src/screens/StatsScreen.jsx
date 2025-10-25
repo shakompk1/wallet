@@ -31,21 +31,21 @@ export default function StatsScreen() {
                 <View style={styles.card}>
                     <Text style={styles.h}>Текущий месяц</Text>
                     <Text style={styles.kpi}>
-                        Доход: {formatMoney(monthIncome)}
+                        Income: {formatMoney(monthIncome)}
                     </Text>
                     <Text style={styles.kpi}>
-                        Расходы: {formatMoney(monthExpense)}
+                        Expenses: {formatMoney(monthExpense)}
                     </Text>
                     <Text style={styles.kpi}>
-                        Итого: {formatMoney(monthIncome - monthExpense)}
+                        Total: {formatMoney(monthIncome - monthExpense)}
                     </Text>
                 </View>
 
                 <View style={styles.card}>
-                    <Text style={styles.h}>Расходы по категориям</Text>
+                    <Text style={styles.h}>Expenses by category</Text>
                     {Object.keys(byCategory).length === 0 ? (
                         <Text style={{ color: "#666", marginTop: 6 }}>
-                            Нет данных
+                            No data
                         </Text>
                     ) : (
                         Object.entries(byCategory).map(([cat, sum]) => (
