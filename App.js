@@ -15,11 +15,11 @@ export default function App() {
                     component={HomeScreen}
                     options={{ title: "Финансы" }}
                 />
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="Add"
                     component={AddEntryScreen}
                     options={{ title: "Новая операция" }}
-                />
+                /> */}
                 <Stack.Screen
                     name="Stats"
                     component={StatsScreen}

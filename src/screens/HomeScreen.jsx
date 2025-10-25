@@ -48,12 +48,12 @@ export default function HomeScreen({ navigation }) {
                 ListHeaderComponent={
                     <View>
                         <View style={styles.card}>
-                            <Text style={styles.h}>Баланс</Text>
+                            <Text style={styles.h}>Balance</Text>
                             <Text style={styles.balance}>
                                 {formatMoney(balance)}
                             </Text>
                             <Text style={styles.sub}>
-                                В этом месяце: +{formatMoney(monthIncome)} / −
+                                This month: +{formatMoney(monthIncome)} / −
                                 {formatMoney(monthExpense)}
                             </Text>
                         </View>
@@ -70,7 +70,7 @@ export default function HomeScreen({ navigation }) {
                                     })
                                 }
                             >
-                                <Text style={styles.btnText}>+ Доход</Text>
+                                <Text style={styles.btnText}>+ Income</Text>
                             </Pressable>
                             <Pressable
                                 style={[
@@ -83,7 +83,7 @@ export default function HomeScreen({ navigation }) {
                                     })
                                 }
                             >
-                                <Text style={styles.btnText}>− Расход</Text>
+                                <Text style={styles.btnText}>− Consumption</Text>
                             </Pressable>
                             <Pressable
                                 style={[
@@ -92,7 +92,7 @@ export default function HomeScreen({ navigation }) {
                                 ]}
                                 onPress={() => navigation.navigate("Stats")}
                             >
-                                <Text style={styles.btnText}>Статистика</Text>
+                                <Text style={styles.btnText}>Statistics</Text>
                             </Pressable>
                         </View>
 
@@ -104,7 +104,7 @@ export default function HomeScreen({ navigation }) {
                                 marginBottom: 8,
                             }}
                         >
-                            Операции
+                            Operations
                         </Text>
                     </View>
                 }
